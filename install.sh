@@ -112,7 +112,7 @@ time_modify(){
     systemctl stop ntp &>/dev/null
 
     echo -e "${Info} ${GreenBG} 正在进行时间同步 ${Font}"
-    //ntpdate time.nist.gov
+    #ntpdate time.nist.gov
     ntpdate ntp.ubuntu.com
 
     if [[ $? -eq 0 ]];then 
