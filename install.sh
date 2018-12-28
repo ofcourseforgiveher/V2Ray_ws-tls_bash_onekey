@@ -113,7 +113,7 @@ time_modify(){
 
     echo -e "${Info} ${GreenBG} 正在进行时间同步 ${Font}"
     #ntpdate time.nist.gov
-    ntpdate ntp.ubuntu.com
+    ntpdate cn.pool.ntp.org
 
     if [[ $? -eq 0 ]];then 
         echo -e "${OK} ${GreenBG} 时间同步成功 ${Font}"
